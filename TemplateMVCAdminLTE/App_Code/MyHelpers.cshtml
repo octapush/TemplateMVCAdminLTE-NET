@@ -1,0 +1,20 @@
+﻿@using System.Web.Mvc
+
+
+@helper FormGroup(string id, string label, string types, string data = null, string placeholders = null)
+{
+    <div class="form-group">
+        <label for="@id" class="col-sm-2 control-label">@label</label>
+
+        <div class="col-sm-10">
+            <input class="form-control" id="@id" placeholder="@placeholders" @data type="@types">
+        </div>
+    </div>
+    <div style="clear: both; margin-bottom: 5px;"></div>
+}
+
+@helper BtnBootstrap(string label, string id = null, string data = null,string classbtn = null)
+{
+    <button class="btn btn-@classbtn" id="@id" @data>@label</button>
+}
+

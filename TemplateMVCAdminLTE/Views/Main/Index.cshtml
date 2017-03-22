@@ -1,0 +1,18 @@
+﻿@using System.Security.Cryptography
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="box box-primary">
+    <div class="box-header">
+    </div>
+    <div class="box-body">
+        @MyHelpers.FormGroup("nama","Nama :","text")
+        @MyHelpers.FormGroup("jk", "Jenis Kelamin :", "text")
+        @MyHelpers.FormGroup("contact", "Contact :", "text")
+        @MyHelpers.BtnBootstrap("SAVE","btnSave",null,"primary pull-right")
+    </div>
+</div>
